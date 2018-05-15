@@ -1,0 +1,14 @@
+1> Align and SNP calling:
+
+Example:
+
+Pair-end:
+./snpMap.pl -f align -in sample/test_R1.fastq sample/test_R2.fastq -t sample/ce10.fasta -config sample/snpmap.config 2> snpmap.align.log
+
+Single-end:
+./snpMap.pl -f align -in sample/test.fastq -t sample/ce10.fasta -config sample/snpmap.config 2> snpmap.align.log
+
+2> Count SNP frequency in all samples, output to file gene.freq.txt.
+
+Example:
+./SnpMap.pl -f freq -d sample/snp
